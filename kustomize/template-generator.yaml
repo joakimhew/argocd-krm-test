@@ -5,5 +5,5 @@ metadata:
   annotations:
     config.kubernetes.io/function: |
       container:
-        image: localhost:5001/value-annotator:latest
+        image: joakimhew/value-annotator:latest
 value: "important-data"
