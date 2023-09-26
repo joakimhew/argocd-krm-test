@@ -18,8 +18,7 @@ spec:
         app: krm-deployment-test
     spec:
       containers:
-        - image: busybox
-          name: busybox
+        - image: nginx
+          name: nginx
           resources: {}
-          command: ["sleep 3600"]
 status: {}
