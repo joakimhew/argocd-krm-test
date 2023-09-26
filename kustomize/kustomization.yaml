@@ -1,0 +1,4 @@
+resources:
+  - service.yaml
+transformers:
+  - annotator.yaml
