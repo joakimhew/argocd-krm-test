@@ -1,9 +1,0 @@
-apiVersion: transformers.example.co/v1
-kind: ValueAnnotator
-metadata:
-  name: notImportantHere
-  annotations:
-    config.kubernetes.io/function: |
-      container:
-        image: localhost:5001/value-annotator:latest
-value: "important-data"

@@ -1,4 +1,4 @@
 resources:
   - service.yaml
 transformers:
-  - annotator.yaml
+  - template-generator.yaml
