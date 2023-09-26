@@ -4,7 +4,6 @@ package main
 import (
 	"os"
 
-	"github.com/davecgh/go-spew/spew"
 	"sigs.k8s.io/kustomize/kyaml/fn/framework"
 	"sigs.k8s.io/kustomize/kyaml/fn/framework/command"
 	"sigs.k8s.io/kustomize/kyaml/kio"
@@ -17,7 +16,6 @@ type ValueAnnotator struct {
 
 func main() {
 	config := new(ValueAnnotator)
-	spew.Dump(config)
 	fn := func(items []*yaml.RNode) ([]*yaml.RNode, error) {
 		for i := range items {
 			err := items[i].PipeE(yaml.SetAnnotation("custom.io/new-value", config.Value))
