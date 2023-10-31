@@ -6,4 +6,4 @@ metadata:
     config.kubernetes.io/function: |
       container:
         image: joakimhew/value-annotator:v1.1.2
-value: "hello-world"
+value: "hello-volvo"
